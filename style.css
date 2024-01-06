@@ -1,18 +1,116 @@
 body {
     font-family: monospace;
     color: rgb(255, 255, 255);
-
     background-color: rgb(19, 19, 19);
+    height: 100%;
+    overflow: hidden;
 }
 
 div {
     border-radius: 10px;
-    background-color: rgb(10, 10, 10);
-
-    margin: 2%;
 }
 
 h1 {
     padding: 17px;
     text-align: center;
 }
+h2 {
+    padding: 8px;
+    text-align: center;
+}
+
+input {
+    background-color: rgb(93, 93, 93);
+    color: white;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+    width: 200px;
+    border-radius: 10px;
+    font-family: monospace;
+    border: none;
+    outline: none;
+    transition-duration: 1s;
+}
+input:focus {
+    background-color: rgb(48, 48, 48);
+    transition-duration: 1s;
+    width: 220px;
+}
+
+button {
+    margin: 0px;
+    border: none;
+}
+
+.switchup {
+    border-radius: 4px 4px 0px 0px;
+}
+
+.switchdown {
+    border-radius: 0px 0px 4px 4px;
+}
+
+button:disabled {
+    color: rgb(72, 72, 72);
+}
+
+#genBoxNumberInput {
+    align-self: center;
+    width: 40%;
+    float: right;
+
+    background-color: rgb(10, 10, 10);
+    margin: 2%;
+}
+
+#genBoxDipswitches {
+    align-self: center;
+    width: 50%;
+    float: left;
+
+    background-color: rgb(10, 10, 10);
+    margin: 2%;
+}
+
+#head {
+    background-color: rgb(10, 10, 10);
+    margin: 2%;
+}
+
+#dipswitchBorder {
+    width: 400px;
+    height: 100px;
+    background-color: black;
+    margin: 3%;
+}
+
+#dipswitches {
+    padding: 27px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0px;
+}
+@media only screen and (max-width: 850px) {
+    /* For mobile phones: */
+    #genBoxNumberInput {
+        width: 96%;
+        float: none;
+    }
+
+    #genBoxDipswitches {
+        width: 96%;
+        float: none;
+        padding: 0.2%;
+    }
+
+    #dipswitchBorder {
+        width: 400px;
+        height: 100px;
+        background-color: black;
+    }
+}
+
+

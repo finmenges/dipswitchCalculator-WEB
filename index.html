@@ -3,13 +3,64 @@
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <title>dipswitchCalculator</title>
+
 </head>
     <body>
-       <div>
+       <div id="head">
             <h1>dipswitchCalculator</h1>
        </div>
+       <div id="genBoxNumberInput">
+            <h2>Enter DMX adress here</h2>
+            <center>
+                <input type="number" value="42" min="1" max="511" inputmode="decimal">
+            </center>
+            <center>
+                <p style="color: dimgrey;">Limited to 511 Channels.</p>
+            </center>
+       </div>
+
+       <div id="genBoxDipswitches">
+            <h2>Dipswitches</h2>
+            <center>
+                <div id="dipswitchBorder">
+                    <div id="dipswitches">
+                        <div>
+                            <center>
+                                <button disabled class="switchup">1</button>
+                                <button disabled class="switchup">2</button>
+                                <button disabled class="switchup">3</button>
+                                <button disabled class="switchup">4</button>
+                                <button disabled class="switchup">5</button>
+                                <button disabled class="switchup">6</button>
+                                <button disabled class="switchup">7</button>
+                                <button disabled class="switchup">8</button>
+                                <button disabled class="switchup">9</button>
+                            </center>
+                        </div>
+                        <div>
+                            <center>
+                                <button class="switchdown">1</button>
+                                <button class="switchdown">2</button>
+                                <button class="switchdown">3</button>
+                                <button class="switchdown">4</button>
+                                <button class="switchdown">5</button>
+                                <button class="switchdown">6</button>
+                                <button class="switchdown">7</button>
+                                <button class="switchdown">8</button>
+                                <button class="switchdown">9</button>
+                            </center>
+                        </div>
+                    </div>
+                </div>
+            </center>
+       </div>
+
+       <div id="footer">
+            <p style="color: dimgrey;">© Finley Menges 2024</p>
+       </div>
+
     </body>
 <script src="main.js"></script>
 </html>
