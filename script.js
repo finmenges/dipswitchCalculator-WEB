@@ -27,6 +27,8 @@ document.addEventListener("DOMContentLoaded", function(){
         writeBinaryToSwitches(dipSwitchCodeString);
     }
 
+    update();
+
     txtInputField.addEventListener("input", ()=>{
         if (txtInputField.value.length!==0) {
             if (txtInputField.value>511) {
