@@ -41,6 +41,7 @@ input:focus {
 button {
     margin: 0px;
     border: none;
+    background-color: white;
 }
 
 .switchup {
@@ -51,8 +52,10 @@ button {
     border-radius: 0px 0px 4px 4px;
 }
 
-button:disabled {
+button:disabled,
+button[disabled]{
     color: rgb(72, 72, 72);
+    background-color: rgb(72, 72, 72);
 }
 
 #genBoxNumberInput {
