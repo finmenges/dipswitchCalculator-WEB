@@ -1,3 +1,3 @@
 # dipswitchCalculator-WEB
-A web based, responsible tool for Dipswitch calculation
+CURRENTLY DOESN'T WORK AT MOBILE PHONES
  
